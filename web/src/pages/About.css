@@ -1,0 +1,111 @@
+.page-hero {
+  padding: 3.5rem 0 2rem;
+}
+
+.page-hero h1 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.03em;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.about-card,
+.info-panel {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.about-card {
+  padding: 1.6rem;
+}
+
+.about-card p {
+  color: var(--muted);
+}
+
+.about-card img {
+  width: 100%;
+  border-radius: 14px;
+  margin-top: 1rem;
+}
+
+.info-panel {
+  padding: 1.4rem;
+}
+
+.info-panel h2 {
+  margin: 0 0 1rem;
+  font-family: var(--display);
+  font-size: 1.2rem;
+}
+
+.info-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.info-list li {
+  display: grid;
+  gap: 0.15rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.info-list li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.info-list span {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.info-list strong {
+  font-size: 1.02rem;
+}
+
+.care-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.care-item {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 14px;
+  background: var(--orange-soft);
+  color: var(--orange-deep);
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .about-grid,
+  .care-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-grid,
+  .care-grid {
+    grid-template-columns: 1fr;
+  }
+}

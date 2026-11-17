@@ -1,0 +1,75 @@
+.site-footer {
+  margin-top: 2rem;
+  padding: 3.5rem 0 1.5rem;
+  background:
+    linear-gradient(180deg, rgba(28, 114, 60, 0.04), transparent 40%),
+    #122318;
+  color: #e7efe9;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 0.8fr;
+  gap: 2rem;
+}
+
+.footer-brand {
+  font-size: 1.55rem;
+}
+
+.footer-brand .india {
+  color: #8fd4a5;
+}
+
+.footer-tagline {
+  margin: 1rem 0 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.footer-note,
+.site-footer p {
+  color: rgba(231, 239, 233, 0.78);
+  margin: 0.35rem 0;
+}
+
+.site-footer h3 {
+  margin: 0 0 0.85rem;
+  font-family: var(--display);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.site-footer a:hover {
+  color: #ffb48a;
+}
+
+.footer-links {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.footer-bottom {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
